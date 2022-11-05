@@ -7,7 +7,7 @@ function Contact() {
         <div className="Contact">
             <form classname="contact">
                 <fieldset>
-                    <h1>Send a message</h1>
+                    <h1>Contact me/h1>
                     <p>Hi there, contact me to ask anything you have in mind</p>
 
                     <div classname="Wrap">
