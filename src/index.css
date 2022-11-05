@@ -11,3 +11,53 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+/* form{
+  width: 95%; 
+  max-width: 25rem;
+  margin: 2rem auto;
+  background-color: white;
+}
+
+
+
+.wrap input,textarea {
+  display: block;
+  font: inherit;
+  width: 100%;
+  border-radius: 4px;
+  resize: none;
+  margin: auto;
+}
+#first_name, #last_name, #email{
+  text-align: left;
+}
+
+button{
+  padding: 5px;
+  font-weight: bold;
+  display: block;
+  width: 100%;
+  margin-top: 15px;
+}
+input[type=text],  input[type=email] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+#btn_submit{
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  background-color:#267df7;
+  color: white;
+}
+.sub button:hover {
+  background-color:#267df7;
+}
+/* Media queries */
+@media (min-width:1025px){
+
+
+} 

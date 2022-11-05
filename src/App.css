@@ -39,6 +39,8 @@ a{
 a:hover{
   text-decoration: underline;
 }
+
+
 /* @media (min-width:1025px){
   .flex{
     display: flex;
