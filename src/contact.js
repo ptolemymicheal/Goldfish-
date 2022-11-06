@@ -2,12 +2,12 @@ import React from 'react'
 import {NavLink} from 'react-router-dom'
 
 function Contact() {
-  return (
-    <div className="contact">
-      <header>
-        <h1 className='contact-h1'>Contact Me</h1>
-        <p className='contact-p'>Hi there, contact me to ask me about anything you have in mind.</p>
-      </header>
+    return (
+        <div className="Contact">
+            <form classname="contact">
+                <fieldset>
+                    <h1>Send a message</h1>
+                    <p>Hi there, contact me to ask anything you have in mind</p>
 
       <form action="">
         <div className='flex-div'>
