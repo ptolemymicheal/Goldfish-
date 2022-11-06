@@ -42,6 +42,157 @@ a:hover{
 
 
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  margin: 0 auto;
+}
+
+.Wrapper {
+  margin: 0 auto;
+  position: relative;
+}
+
+.Wrapper, .ButtonsWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.share {
+  position: absolute;
+  top: 3rem;
+  left: 70%;
+  border: 2px dotted #D0D5DD;
+  padding: 1rem;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.share:hover {
+  background: #F9FAFB;
+}
+
+.share-mobile {
+  display: none;
+}
+
+.AviWrapper {
+  position: relative;
+}
+
+.AviWrapper .avi {
+  border-radius: 50%;
+  width: 88px;
+  margin: 3rem 0 1rem;
+  cursor: pointer;
+}
+
+.AviWrapper:hover .avi {
+  -webkit-filter: brightness(30%);
+}
+
+.AviWrapper .upload {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 70%;
+  left: 50%;
+  visibility: hidden;
+  cursor: pointer;
+}
+
+.AviWrapper:hover .upload {
+  visibility: visible;
+}
+
+.my-name {
+  margin-bottom: 3rem;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #101828;
+}
+
+.ButtonsWrapper {
+  width: 80%;
+  gap: 8px;
+}
+
+.ButtonsWrapper a {
+  text-align: center;
+  padding: 24px 32px;
+  color: #101828;
+  background: #EAECF0;
+  border: 1px solid #EAECF0;
+  border-radius: 8px;
+  width: 100%;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  }
+
+.ButtonsWrapper a:hover {
+  background: #D0D5DD;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  color: #101828;
+}
+
+a {
+  display: inline-block;
+}
+
+.slack-git {
+  margin: 3rem 0 5rem;
+}
+
+.slack-git img {
+  margin-right: 1rem;
+}
+
+hr {
+  width: 90%;
+  border: thin solid #EAECF0;
+}
+
+footer {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem auto;
+}
+
+/* Slack Page */
+
+#slack {
+  visibility: hidden;
+}
+
+
+/* Contact Page */
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3%;
+  width: 100%;
+}
+
 .contact header {
   width: 50%;
 }
@@ -128,6 +279,11 @@ a:hover{
   cursor: pointer;
 }
 
+/* .contact input:invalid, .contact textarea:invalid {
+  border: 1px solid #F89687;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #FFD3CC;
+  border-radius: 8px;
+} */
 
 ::placeholder {
   font-weight: 400;
@@ -154,4 +310,30 @@ a:hover{
 
 .contact-submit {
   width: 100%;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 700px) {
+  .share-mobile {
+    display: block;
+  }
+
+  .share-desktop {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .contact header {
+    width: 90%;
+  }
+
+  .contact .flex-div {
+    flex-direction: column;
+  }
+
+  .contact form {
+    width: 90%;
+  }
 }
