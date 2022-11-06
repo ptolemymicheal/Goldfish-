@@ -1,52 +1,38 @@
-import React from 'react';
-import './App.css';
-
+import React from 'react'
+import {NavLink} from 'react-router-dom'
 
 function Contact() {
-    return (
-        <div className="contact_form">
-            <header>
+  return (
+    <div className="contact">
+      <header>
+        <h1 className='contact-h1'>Contact Me</h1>
+        <p className='contact-p'>Hi there, contact me to ask me about anything you have in mind.</p>
+      </header>
 
-                <h1>Contact Me</h1>
-                <p>Hi there, contact me to ask anything you have in mind</p>
-            </header>
-            <form action=''>
-                < div classname='contact_flex'>
+      <form action="">
+        <div className='flex-div'>
+          <div>
+            <label htmlFor="first_name">First name</label>
+            <input type="text" name="" id="first_name" placeholder='Enter your first name' required/>
+          </div>
+          <div>
+            <label htmlFor="last_name">Last name</label>
+            <input type="text" name="" id="last_name" placeholder='Enter your last name' required/>
+          </div>
+        </div>
+        <label htmlFor="email">Email</label>
+        <input type="email" name="" id="email" placeholder='yourname@email.com' required/>
+        <label htmlFor="message">Message</label>
+        <textarea name="" id="message" cols="30" rows="10" placeholder="Send me a message and I'll reply you as soon as possible..." required/>
+        <div className='accept'><input type="checkbox" name="" id="" required /> <span>You agree to providing your data to Zuri who may contact you.</span></div>
+        <NavLink to={"/contact"} className="contact-submit"><input type="submit" value="send message" id='btn__submit' /></NavLink>
+      </form>
 
-                    <label for="first_name" id="first_name" className='input'>Your first name</label>
-                    <input type="text" id="name" required placeholder="Enter your First Name" />
+     
+    </div>
 
+    
 
-
-                    <label for="last_name" id="last_name" className='input'>Your last name</label>
-                    <input type="text" id="last_name" required placeholder="Enter your Last Name" />
-
-                </div>
-
-                <div classname="Wrap">
-                    <label for="email" id="email-label">Your email</label>
-                    <input type="email" id="email" required placeholder="Your@email.com" className='input' />
-                </div>
-
-
-                <div classname="Wrap">
-                    <label for="message" id="messsage-label"></label>
-                    <textarea id="message" cols="30" rows="10" name="message" placeholder="Send me a message and i'll reply you as soon as possible..." required></textarea>
-                </div>
-                <div className='check'>
-                    <input type="checkbox" required /> <span>You agree to providing your data to Zuri who may contact you.</span>
-                </div>
-
-                <div classname="sub">
-                    <button type="submit" id='btn_submit'>Send Message</button>
-                </div>
-
-
-            </form>
-
-        </div >
-
-    );
+  )
 }
-
-export default Contact; 
+export default Contact;
